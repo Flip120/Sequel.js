@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>Sequentially.js</title>
+	<script type="text/javascript" src='../lib/index.js'></script>
+	<script type="text/javascript">
+
+		var consecutiveJs = ConsecutiveJS.getInstance();
+		var consecutiveJs2 = ConsecutiveJS.getInstance();
+
+
+		consecutiveJs2.addSequence([39,39], {
+			callback : function(){
+				console.log('ConsecutiveJs2');
+			}
+		});
+
+		consecutiveJs.addSequence([38,38], {
+			once : true,
+			callback : function(){
+				console.log('Arriba Arriba!');
+			}
+		});
+
+		consecutiveJs.addSequence([37,37], {
+			callback : function(){
+				console.log('izq izq!');
+			}
+		});
+
+		consecutiveJs.addSequence([38,38,40,40,37,39,37,39,66,65,13], {
+			callback :  function(){
+				console.log('Konami Code Accomplished!');
+			}
+		});
+
+		window.addEventListener('keydown', function(e){
+		  consecutiveJs.addValue(e.keyCode);
+		  consecutiveJs2.addValue(e.keyCode);
+		});
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "secuent.js-lib",
+  "version": "1.0.0",
+  "description": "secuency input checker library for javascript",
+  "main": "server",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "secuence"
+  ],
+  "author": "Carlos Cabañero",
+  "license": "ISC",
+  "devDependencies" : {
+  }
+}
+
